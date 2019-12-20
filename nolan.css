@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  font-family: 'Julius Sans One', sans-serif;
+  animation-name: tenet;
+  animation-duration: 4s;
+  opacity: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes tenet {
+  50% {
+    opacity: 0;
+  }
+}
+
+span {
+  margin: 0 2rem;
+  padding: 0;
+}
+
+
+span.letter4, span.letter5 {
+  animation: letter 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  animation-play-state: paused;
+}
+
+
+span.letter4:hover,
+span.letter5:hover {
+  animation-play-state: running;
+}
+
+@keyframes letter {
+  100% {
+      transform: rotate(180deg);
+      margin-bottom: 1rem;
+  }
+}
