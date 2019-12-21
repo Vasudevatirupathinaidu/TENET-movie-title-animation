@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+bdo {
+  letter-spacing: 5rem;
+  animation-name: title;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes title {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+div {
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+}
+
+body>div:nth-child(4) {
+  margin-top: 4rem;
+}
+
+body>div:nth-child(1) {
+  animation-name: t1;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes t1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(15rem, 16.7rem);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body>div:nth-child(2) {
+  animation-name: e1;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes e1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(-7.8rem, 8.3rem);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body>div:nth-child(4) {
+  animation-name: e2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes e2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(7.8rem, -8.3rem);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body>div:nth-child(5) {
+  animation-name: t2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes t2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(-15rem, -16.7rem);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
